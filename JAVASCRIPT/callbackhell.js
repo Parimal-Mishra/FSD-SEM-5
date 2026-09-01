@@ -1,18 +1,22 @@
-function step1(value, callback) {
-    callback(value + 10);
+function test1(cb){
+    setTimeout(()=> {
+        console.log("Test 1");
+        cb();
+    },20000);
 }
-function step2(value, callback) {
-    callback(value + 10);
+function test2(){
+    setTimeout(()=> {
+        console.log("Test 1");
+        cb();
+    },10000);
 }
-function step3(value, callback) {
-    callback(value + 10);
+function test3(){
+    
 }
-
-// --- CALLBACK HELL ---
-step1(0, (result1) => {
-    step2(result1, (result2) => {
-        step3(result2, (result3) => {
-            console.log(result3); // Outputs: 30
-        });
-    });
-});
+function test4(){
+    
+}
+test1();
+test2();    
+test3();
+test4();
