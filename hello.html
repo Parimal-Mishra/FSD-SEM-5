@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="ad"></p>
+    <script>
+
+         // Document is the content area allocated by BOM and write is a method of 
+        //document object which is used to write content on the web page.
+
+        document.write("Hello World");
+       
+        document.write("Hi");
+
+        // Alert is a method of window object which is used to display an alert/warning box 
+        //with a specified message and an OK button.
+
+        alert("Error");
+        
+        //why does alert box appear before the content is displayed on the web page?
+        // It uses the concept of async wait as js is single threaded and it waits for the 
+        //alert box to be closed before executing the next line of code.
+
+        //The main purpose of console.log() was not to display messages to the user, 
+        //but to help developers debug their code . it tells the dev that the code is working 
+        //fine and also helps to check the value of variables at a certain point in time.
+
+        console.log("Hi");
+        
+        documnet.getElementById("ad").innerHTML = "ABES College";
+        //This is child method that is used to access data between two nodes 
+        //It is used to access the content of an element with a specific id and change its inner HTML content.
+        //It is not used for Displaying content on the web page but for manipulating the content of an element with a specific id.
+
+    </script>
+</body>
+</html>
