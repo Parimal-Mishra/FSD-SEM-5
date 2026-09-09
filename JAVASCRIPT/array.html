@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const arr=["car2","car1","car3"];
+        let text=" "; //This is null character in JS
+        for(let i=0;i<arr.length;i++){
+            if(i==1){
+                continue;
+            }
+            text+=arr[i]+"<br>";
+        }
+        document.write(text);
+
+        //as all value of array is stored in text variable and then printed on the screen 
+        //using document.write() method.
+        
+    </script>
+</body>
+</html>

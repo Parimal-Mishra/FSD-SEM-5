@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="height: 600PX; width:600px; background-color:rgb(109, 168, 150); margin: auto; border-radius: 10px; text-align: center;">
+        
+        <div>
+            <div style="display: flex; justify-content:center; align-items: center; ">
+                <img src="bus.png" style="border-radius:50%; height: 50px; width: 50px;">
+                <H1>Bus Booking System</H1>
+            </div>
+        </div>
+
+        <div style="margin:5px;justify-content:center;background-color:rgb(231, 223, 156); border-radius: 5px;">
+            <h3>User Information</h3>
+        </div>
+
+        <div style="margin:15px;padding:5px;justify-content:center;">
+            <form style="text-align: left;">
+                
+                <label for="name">User Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="age">User Age:</label>
+                <input type="number" id="age" name="age" required><br><br>
+
+                <label for="adhar">User Aadhar No:</label>
+                <input type="text" id="adhar" name="adhar" required><br><br>
+
+                <label for="city">Select Your City:</label>
+                <select id="city" name="city" required>
+                    <option value="">--Select City--</option>
+                    <option value="DEL">Delhi</option>
+                    <option value="MUM">Mumbai</option>
+                    <option value="GZB">Ghaziabad</option>
+                </select><br><br>
+
+                <label for="date">Select Date:</label>
+                <input type="date" id="date" name="date" required><br><br>
+            </form>
+        </div>
+
+        <div style="margin:10px;justify-content:center;background-color:rgb(243, 201, 151); border-radius: 5px;">
+            <h3>Bus Information</h3>
+        </div>
+
+        <div style="margin:15px;padding:5px;justify-content:center;">
+            <form style="text-align: left;">
+
+                <label for="bus">Select Bus:</label><br>
+                <input type="radio" id="AC" name="Bus">AC Bus 2000<br>
+                <input type="radio" id="AC" name="Bus">Non-AC Bus 1500<br><br>
+
+                <label for="seats">Number of Seats:</label>
+                <input type="number" id="seats" name="seats" required><br><br>
+
+                <button onclick="PrintReciept()">Book Now</button>
+            </form>
+        </div>
+    </div>
+</body>
+<script>
+    PrintReciept()
+</html>

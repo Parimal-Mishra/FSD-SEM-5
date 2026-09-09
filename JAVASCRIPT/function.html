@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function abes(){
+            document.write("! not coder<br>");
+        }
+        abes();
+        abes();
+
+        function add(x,y){
+            document.write(x+y+"<br>");
+        }
+
+        function sub(x,y){
+            document.write(x-y+"<br>");
+        }
+        add(10,5);
+        sub(10,5);
+
+        const abes1 = () => "! not coder<br>";
+
+        document.write(abes1());
+
+        const add1 =(x,y) => x+y;
+        const sub1 =(x,y) => x-y;
+        const mul =(x,y) => x*y;
+        const div =(x,y) => x/y;
+
+        const calculate = (x,y,operator) => operator(x,y);
+        document.write(calculate(10,5,add1)+"<br>");
+        document.write(calculate(10,5,sub1)+"<br>");
+        document.write(calculate(10,5,mul)+"<br>");
+        document.write(calculate(10,5,div)+"<br>");
+        
+    </script>
+</body>
+</html>
