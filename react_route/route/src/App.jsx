@@ -29,8 +29,8 @@ const App = () => {
     <div>
       <BrowserRouter>
       <nav style={{justifyContent:"space-around"}}>
-        <Link to="/">HOME PAGE</Link>
-        <Link to="/about">ABOUT PAGE</Link>
+        <Link to="/">HOME PAGE</Link> | {" "}
+        <Link to="/about">ABOUT PAGE</Link> | {" "}
         <Link to="/phone">PHONE PAGE</Link>
       </nav>
 
