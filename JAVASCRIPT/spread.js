@@ -4,4 +4,4 @@ let c=[...a , ...b]
 console.log(c)
 
 // ... is known as spread operator 
-// it can be used to 
+// it  allows an iterable (like an array, string, or object) to be expanded into individual elements or properties
